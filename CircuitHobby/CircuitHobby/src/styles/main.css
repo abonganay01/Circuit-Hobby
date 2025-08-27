@@ -1,64 +1,269 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #f4f4f4 60%, #ffe082 100%);
+    color: #222;
 }
 
 header {
-    background: #35424a;
+    background: linear-gradient(90deg, #35424a 70%, #ffd600 100%);
     color: #ffffff;
-    padding: 20px 0;
+    padding: 32px 0 18px 0;
     text-align: center;
+    box-shadow: 0 2px 12px rgba(53,66,74,0.08);
+    border-radius: 0 0 30px 30px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.7em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+.logo {
+    font-size: 2.2em;
+    vertical-align: middle;
+    margin-right: 10px;
+    color: #ffd600;
 }
 
 nav {
-    margin: 20px 0;
+    margin: 18px 0 0 0;
 }
 
 nav a {
     color: #ffffff;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 18px;
     font-weight: bold;
+    font-size: 1.1em;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background: #ffd600;
+    color: #35424a;
+    text-decoration: none;
 }
 
 main {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
+    padding: 32px 0;
+    max-width: 900px;
+    margin: 30px auto;
     background: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 24px rgba(53,66,74,0.10);
+    border-radius: 18px;
 }
 
-article {
+.hero {
+    background: linear-gradient(90deg, #ffd600 0%, #ff6f00 100%);
+    color: #222;
+    padding: 40px 0 30px 0;
+    text-align: center;
+    border-radius: 18px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 12px rgba(255,214,0,0.08);
+}
+
+.hero h2 {
+    font-size: 2.2em;
+    margin-bottom: 12px;
+}
+
+.hero .cta-btn {
+    display: inline-block;
+    margin-top: 18px;
+    background: #35424a;
+    color: #ffd600;
+    padding: 12px 32px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(53,66,74,0.08);
+}
+
+.hero .cta-btn:hover {
+    background: #ff6f00;
+    color: #fff;
+}
+
+.projects-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(53,66,74,0.08);
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 24px rgba(53,66,74,0.15);
+    transform: translateY(-6px) scale(1.03);
+}
+
+.project-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(53,66,74,0.08);
+}
+
+.project-card h3 {
+    margin: 10px 0 6px 0;
+    font-size: 1.2em;
+    color: #ff6f00;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.project-card .read-more {
+    display: inline-block;
+    background: #ffd600;
+    color: #222;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+}
+
+.project-card .read-more:hover {
+    background: #ff6f00;
+    color: #fff;
+}
+
+.tutorials {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(53,66,74,0.08);
+    padding: 30px 0;
+    margin: 40px 0;
+}
+
+.tutorials h2 {
+    text-align: center;
     margin-bottom: 20px;
-}
-
-article h2 {
-    font-size: 1.8em;
     color: #35424a;
 }
 
-article p {
-    line-height: 1.6;
+.tutorial-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.tutorial-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.tutorial-list a {
+    color: #ff6f00;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.tutorial-list a:hover {
+    color: #ffd600;
+}
+
+.tutorial-list .date {
+    color: #888;
+    font-size: 0.95em;
+}
+
+.tutorial-list img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 12px;
+    box-shadow: 0 1px 4px rgba(53,66,74,0.08);
+}
+
+.about {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #35424a;
+}
+
+.about p {
+    font-size: 1.1em;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #35424a;
+    background: linear-gradient(90deg, #35424a 70%, #ffd600 100%);
     color: #ffffff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    border-radius: 30px 30px 0 0;
+    font-size: 1em;
+    margin-top: 40px;
+    box-shadow: 0 -2px 12px rgba(53,66,74,0.08);
 }
+/* Add to main.css */
+body.dark-mode {
+    background: linear-gradient(135deg, #23272a 60%, #35424a 100%);
+    color: #ffd600;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background: linear-gradient(90deg, #23272a 70%, #35424a 100%);
+    color: #ffd600;
+}
+
+body.dark-mode main {
+    background: #23272a;
+    color: #ffd600;
+}
+
+body.dark-mode .project-card,
+body.dark-mode .tutorials {
+    background: #2c3136;
+    color: #ffd600;
+    box-shadow: 0 2px 12px rgba(53,66,74,0.18);
+}
+
+body.dark-mode nav a {
+    color: #ffd600;
+}
+
+body.dark-mode nav a:hover {
+    background: #ffd600;
+    color: #23272a;
