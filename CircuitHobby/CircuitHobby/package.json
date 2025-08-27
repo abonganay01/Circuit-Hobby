@@ -1,18 +1,20 @@
 {
-  "name": "CircuitHobby",
+  "name": "circuit-hobby",
   "version": "1.0.0",
   "description": "A tech blog site dedicated to electronics and hobby projects.",
   "main": "src/index.html",
   "scripts": {
     "start": "live-server src",
-    "build": "echo 'Build process here'",
-    "test": "echo 'No tests specified'"
+    "build": "echo \"No build step required for static site\"",
+    "test": "echo \"No tests specified\""
   },
   "keywords": [
     "tech",
     "blog",
     "electronics",
-    "hobby"
+    "hobby",
+    "tinkercad",
+    "projects"
   ],
   "author": "Your Name",
   "license": "MIT",
