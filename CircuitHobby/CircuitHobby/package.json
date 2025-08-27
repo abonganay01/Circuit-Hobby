@@ -1,0 +1,23 @@
+{
+  "name": "CircuitHobby",
+  "version": "1.0.0",
+  "description": "A tech blog site dedicated to electronics and hobby projects.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process here'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "tech",
+    "blog",
+    "electronics",
+    "hobby"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
